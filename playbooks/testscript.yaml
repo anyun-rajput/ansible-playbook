@@ -1,4 +1,6 @@
+---
 - name: Copy file to remote machine
+- host: all
   become: true
   copy:
     src: /root/testfile.txt
