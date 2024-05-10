@@ -1,0 +1,8 @@
+---
+- host: all
+  become: true
+  tasks:
+  - name: Copy file to remote machine
+    copy:
+      src: /root/testfile.txt
+      dest: /tmp/testfile.txt
