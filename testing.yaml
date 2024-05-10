@@ -4,5 +4,5 @@
   tasks:
   - name: Copy file to remote machine
     copy:
-      src: /root/testfile.txt
+      src: /tmp/testfile.txt
       dest: /tmp/testfile.txt
