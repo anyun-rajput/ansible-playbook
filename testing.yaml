@@ -1,8 +1,7 @@
 ---
-- hosts: all
+- name: Transfer and execute a script.
+  hosts: all
   become: true
   tasks:
-  - name: Copy file to remote machine
-    copy:
-      remote_src: /tmp/testfile.txt
-      dest: /tmp/testfile.txt
+     - name: Copy and Execute the script
+       script: /root/test.sh
