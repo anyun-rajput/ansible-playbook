@@ -4,5 +4,5 @@
   tasks:
   - name: Copy file to remote machine
     copy:
-      src: /tmp/testfile.txt
+      src: /home/anux/testfile.data
       dest: /tmp/testfile.txt
