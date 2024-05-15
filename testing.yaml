@@ -1,10 +1,8 @@
 ---
 - name: Transfer and execute a script.
   hosts: all
-  become: true
   tasks:
      - name: Copy and Execute the script
        become: yes
        become_user: root
-       become_method: su
        script: /home/semaphore/test.sh
